@@ -6,3 +6,11 @@ They create Users
     nmespace administrators
 
 
+# 
+aws sts get-caller-identity
+aws eks update-kubeconfig --region ca-central-1 -name eks-cluster
+
+# set namespace by default
+install kubens 
+kubens <namespace>
+
