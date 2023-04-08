@@ -33,9 +33,9 @@ spec:
         name: mongodb # has to match .spec.template.metadata.labels
         tier: db
     spec:
-     containers:
+      containers:
       - name: mongodb
-        image: kbachu/mongodb:k8
+        image: techworldwithsiva/mongodb:v1
         ports:
         - containerPort: 27017
           name: mongodb
