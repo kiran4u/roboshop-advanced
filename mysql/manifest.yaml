@@ -37,7 +37,12 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: mysql
+        image: kbachu/mysql:k8
+        envFrom:
+         - configMapRef:
+            name: mysql-config
+         - secretRef:
+            name: mysql-secret
         ports:
         - containerPort: 3306
           name: mysql
