@@ -6,7 +6,7 @@ metadata:
 data:
   MYSQL_DATABASE: "cities"
   MYSQL_ALLOW_EMPTY_PASSWORD: "yes" 
-  explicit_defaults_for_timestamp=true 
+  
 ---
 apiVersion : v1
 kind: Secret
